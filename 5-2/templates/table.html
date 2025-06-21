@@ -1,0 +1,14 @@
+
+<!doctype html>
+<html>
+<head><title>{{ title }}</title></head>
+<body>
+    <h2>{{ title }}</h2>
+    <table border="1" cellpadding="5">
+        <tr>{% for header in headers %}<th>{{ header }}</th>{% endfor %}</tr>
+        {% for row in rows %}
+        <tr>{% for col in row %}<td>{{ col }}</td>{% endfor %}</tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
